@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html class="init-no-js">
 <head>
 <meta charset="UTF-8" />
@@ -99,6 +99,9 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
 	<div id="store-area" hidden><tw-storydata name="Hut in the Forest" startnode="20" creator="Twine" creator-version="2.1.0" ifid="215C8BA1-61D0-4274-ADBE-391711D0C55E" format="SugarCube" format-version="2.12.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+
+
+
 
 
 
@@ -263,6 +266,9 @@ macros['wizardwitch'] =
 
 
 
+
+
+
 </script><tw-passagedata pid="1" name="Structure Diagram" tags="" position="72,291">Act I
 
 Choice:
@@ -297,7 +303,7 @@ Only four years after finishing my M.A. in the Dark Arts, I was forced to move t
 
 [[continue|villagers]]&lt;&lt;/replace&gt;&gt;&lt;&lt;/click&gt;&gt; did not go well at all.&lt;/span&gt;
 
-</tw-passagedata><tw-passagedata pid="21" name="villagers" tags="" position="793,321">&lt;&lt;set $week to 1&gt;&gt;&lt;&lt;set $counter++&gt;&gt;I moved my things into the hut, I had a bed, a rocking chair, and a utility cauldron. &lt;&lt;print $week&gt;&gt;
+</tw-passagedata><tw-passagedata pid="21" name="villagers" tags="" position="793,321">&lt;&lt;set $week to 1&gt;&gt;&lt;&lt;set $counter++&gt;&gt;I moved my things into the hut, I had a bed, a rocking chair, and a utility cauldron.
 
 I settled into my chair to...
 [[ponder the universe.]]
@@ -490,7 +496,7 @@ On Sunday, I heard a faint knock at my door. &lt;&lt;set $hortense to [&quot;&qu
 &lt;&lt;display &quot;Actions List&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="63" name="ask her what her name is." tags="" position="2760,320">It took some coaxing, but eventually the girl stuttered, &quot;Princess Hortense.&quot;
 
 &lt;&lt;set $knownname to 1&gt;&gt;&lt;&lt;display &quot;Actions List&quot;&gt;&gt;
-</tw-passagedata><tw-passagedata pid="64" name="test to see if she is a Chosen One." tags="" position="2596,453">Luckily, I had an old box of Chosen One Testing Strips. After swabbing the girls&#x27; hand with the strip, I waited impatiently. 
+</tw-passagedata><tw-passagedata pid="64" name="test to see if she is a Chosen One." tags="" position="2596,453">Luckily, I had an old box of Chosen One Testing Strips. After swabbing the girl&#x27;s hand with the strip, I waited impatiently. 
 
 Slowly, the image on the strip resolved into an &quot;X&quot;. &lt;&lt;if $knownname == 1&gt;&gt;Princess Hortense&lt;&lt;else&gt;&gt;The girl&lt;&lt;endif&gt;&gt; was indeed a Chosen One!
 
@@ -500,7 +506,7 @@ I said&lt;&lt;if $knownname == 1&gt;&gt;
 &lt;&lt;else&gt;&gt;
 [[&quot;Strange girl, you may be more important than you know.&quot;]]
 [[&quot;Strange girl, we should get you back home.&quot;]]
-&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="65" name="Actions List" tags="" position="2443,389">I decided to
+&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="65" name="Actions List" tags="" position="2443,388">I decided to
 &lt;&lt;actions [[get her a glass of water.]] [[ask her what her name is.]] [[ask how she came to the hut.]] [[test to see if she is a Chosen One.]]&gt;&gt;</tw-passagedata><tw-passagedata pid="66" name="&quot;Princess Hortense, you may be more important than you know.&quot;" tags="" position="2992,876">I explained how Chosen Ones only come around every few generations as well as how they were desitned to be great leaders. 
 
 Princess Hortense was confused. &quot;I&#x27;m the littlest of my sisters,&quot; she said. &quot;They always push me around. How can I be great?&quot;
@@ -516,7 +522,7 @@ They brought us back to the king&#x27;s hunting encampment. The king, the most p
 
 &quot;Who brought you home?&quot; asked the king. The princess pointed to me.
 
-&quot;You shall have great treasure!&quot; the king said. Unfortunately, what the king considered &quot;great treasure&quot; for the commoners was a modest bag of ten silver.&lt;&lt;set $money to $money + 10&gt;&gt;
+&quot;You shall have great treasure!&quot; the king said. Unfortunately, what the king considered &quot;great treasure&quot; for the commoners was a modest bag of ten silvers.&lt;&lt;set $money to $money + 10&gt;&gt;
 
 Hortense said, &quot;Dad, you always say I should have a tutor! Can &lt;&lt;heshe&gt;&gt; come back a tutor me?&quot;
 
@@ -525,11 +531,11 @@ The king stroked his chin, then declared, &quot;The weird forest &lt;&lt;wizardw
 [[I accepted, in recognition of how the king can do literally anything to anyone for any reason.]]</tw-passagedata><tw-passagedata pid="68" name="&quot;Strange girl, you may be more important than you know.&quot;" tags="" position="2897,603">The girl looked up at me and said, indignantly, &quot;My name is Princess Hortense.&quot;
 
 I replied,
-[[&quot;Well, alright, your majesty, you might be exactly as important as you know.&quot;|&quot;Princess Hortense, you may be more important than you know.&quot;]]
+[[&quot;Well, alright, Your Majesty, you might be exactly as important as you know.&quot;|&quot;Princess Hortense, you may be more important than you know.&quot;]]
 [[&quot;My apologies. Well, Princess Hortense, you are more important than you know.&quot;|&quot;Princess Hortense, you may be more important than you know.&quot;]]</tw-passagedata><tw-passagedata pid="69" name="&quot;Strange girl, we should get you back home.&quot;" tags="" position="3048,604">The girl looked up at me and said, indignantly, &quot;My name is Princess Hortense.&quot;&lt;&lt;set $hortense.push(&quot;angry&quot;)&gt;&gt;
 
 I replied,
-[[Well, alright, your majesty, let&#x27;s get you home.|&quot;Princess Hortense, we should get you back home.&quot;]]</tw-passagedata><tw-passagedata pid="70" name="accepted it and went back to my hut." tags="" position="2306,999">The huntsmen took the princess. I heard them talking about a reward.
+[[Well, alright, Your Majesty, let&#x27;s get you home.|&quot;Princess Hortense, we should get you back home.&quot;]]</tw-passagedata><tw-passagedata pid="70" name="accepted it and went back to my hut." tags="" position="2306,999">The huntsmen took the princess. I heard them talking about a reward.
 
 [[Looks like I missed out.|transition to Week 2]]</tw-passagedata><tw-passagedata pid="71" name="insisted that I would see the princess safely back to her parents." tags="" position="2473,920">The huntsmen were upset, but accepted that we were inseperable.
 
@@ -539,7 +545,7 @@ They brought us back to the king&#x27;s hunting encampment. The king, the most p
 
 &quot;Who brought you home?&quot; asked the king. The princess pointed to me.
 
-&quot;You shall have great treasure!&quot; the king said. Unfortunately, what the king considered &quot;great treasure&quot; for the commoners was a modest bag of ten silver.&lt;&lt;set $money to $money + 10&gt;&gt;
+&quot;You shall have great treasure!&quot; the king said. Unfortunately, what the king considered &quot;great treasure&quot; for the commoners was a modest bag of ten silvers.&lt;&lt;set $money to $money + 10&gt;&gt;
 
 [[I offered my services as a tutor.]]
 [[I went home.|transition to Week 2]]</tw-passagedata><tw-passagedata pid="72" name="excellent" tags="" position="2331,295">&lt;&lt;goto &quot;Week 1&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="73" name="&quot;Dunno kid, guess you&#x27;re in for a rough time.&quot;" tags="" position="2982,1038">Princess Hortense started to cry. I shrugged, then said,
@@ -555,11 +561,11 @@ The king, the most powerful human in the world, emerged from his tent. The hunts
 
 &quot;Who brought you home?&quot; asked the king. The princess pointed to me.
 
-&quot;You shall have great treasure!&quot; the king said. Unfortunately, what the king considered &quot;great treasure&quot; for the commoners was a modest bag of ten silver.&lt;&lt;set $money to $money + 10&gt;&gt;
+&quot;You shall have great treasure!&quot; the king said. Unfortunately, what the king considered &quot;great treasure&quot; for the commoners was a modest bag of ten silvers.&lt;&lt;set $money to $money + 10&gt;&gt;
 
 Over the course of the day, I hung around the camp. Eventually, the king came to me and offered me a position as a tutor.
 
-[[Excellent!]]</tw-passagedata><tw-passagedata pid="77" name="ask how she came to the hut." tags="" position="2442,540">She explained, &quot;I... followed a light. In the forest. I think it might have been a ghost! When it disappeared, I was all turned around. I&#x27;ve been trying to get back all day. I saw your hut and thought you could help.&quot;
+[[Excellent!]]</tw-passagedata><tw-passagedata pid="77" name="ask how she came to the hut." tags="" position="2441,541">She explained, &quot;I... followed a light. In the forest. I think it might have been a ghost! When it disappeared, I was all turned around. I&#x27;ve been trying to get back all day. I saw your hut and thought you could help.&quot;
 
 &lt;&lt;display &quot;Actions List&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="78" name="transition to Week 2" tags="" position="2396,1126">&lt;&lt;set $hortense.push(&quot;home&quot;)&gt;&gt;&lt;&lt;set $week to 3&gt;&gt;&lt;&lt;goto &quot;Week 1&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="79" name="Excellent!" tags="" position="3324,1033">I accompanied the hunting party back to the castle, where they set me up in the highest room of the tallest tower. My first lesson for the princess began the next day.
 
@@ -578,6 +584,8 @@ We locked arms above the anthill, and I transformed us both.
 [[I took a look around.]]</tw-passagedata><tw-passagedata pid="81" name="a dog." tags="" position="3472,1336">We walked out to the palace green. Without much ado, I transformed us both into dogs.
 
 The world was washed into black and white, but my nose was opened up. I smelled meat and fresh-cut lumber. Hortense, a beagle, looked at me for guidance.
+
+I decided to
 
 [[go towards the meat.]]
 [[go towards the lumber.]]</tw-passagedata><tw-passagedata pid="82" name="a sparrow." tags="" position="3700,1001">I led her to the window. &quot;Ready?&quot; I asked.
@@ -598,7 +606,7 @@ I touched the back of Hortense&#x27; thorax with my antenna and
 [[led her to go look for food.]]
 [[moved to defend her from the other ants.]]
 [[turned us back into humans.|I turned us back into humans.]]
-</tw-passagedata><tw-passagedata pid="84" name="led her to go look for food." tags="" position="2772,1465">Fortunately, I had an advantage. I made straight for the pile of seeds I&#x27;d placed on the anthill. Hortense followed closely. When I cam closer, I signalled, &quot;Food!&quot;
+</tw-passagedata><tw-passagedata pid="84" name="led her to go look for food." tags="" position="2772,1465">Fortunately, I had an advantage. I made straight for the pile of seeds I&#x27;d placed on the anthill. Hortense followed closely. When I came closer, I signalled, &quot;Food!&quot;
 
 Other ants ran past us to pick up seeds. One of them nudged Hortense, signalling, &quot;Work. Carry food.&quot;
 
@@ -831,7 +839,7 @@ I realized suddenly that
 
 [[Time to go home.|I had earned the rest of the week off.]]</tw-passagedata><tw-passagedata pid="127" name="I conjured a terrible vision of shadow and flame." tags="" position="2993,2138">The melee stopped immediately, and in its place were about two dozen knights and dames cowering in fear.
 
-[[I demanded they explain themselves.]]</tw-passagedata><tw-passagedata pid="128" name="I shouted out, &quot;What is the meaning of this?&quot;" tags="" position="3141,2133">The nobles continued to hack away at each other. I wandered out among them, nearly taking a broadsword to the face.
+[[I demanded they explain themselves.]]</tw-passagedata><tw-passagedata pid="128" name="I shouted out, &quot;What is the meaning of this?&quot;" tags="" position="3145,2133">The nobles continued to hack away at each other. I wandered out among them, nearly taking a broadsword to the face.
 
 Luckily, Hortense found me and pulled me into an alcove. I asked her, &quot;What&#x27;s happening?&quot;
 
@@ -882,7 +890,7 @@ He replied, &quot;No, from Princess Hortense. In the king&#x27;s absence, she ha
 For our second lesson, I chose to turn her into
 
 [[an ant.]]
-[[a dog.]]</tw-passagedata><tw-passagedata pid="138" name="Good Hortense" tags="" position="3290,2011">She replied, &quot;My father has gone away to find the Holy Grail, or maybe just a nice place to write his novel. Either way, the nobles are at each other&#x27;s throats.&quot;
+[[a dog.]]</tw-passagedata><tw-passagedata pid="138" name="Good Hortense" tags="" position="3290,2011">She replied, &quot;My father has gone away to find the Holy Grail, or maybe just a nice place to write his novel. Either way, the nobles are at each others&#x27; throats.&quot;
 
 &quot;What are you going to do?&quot; I asked.
 
@@ -1166,7 +1174,7 @@ AN END</tw-passagedata><tw-passagedata pid="191" name="I accepted, in recognitio
 
 [[I&#x27;d better get started, then!|incinerate my enemies]]
 [[Two weeks??? I can only focus for fifteen minutes! No way.|Week 1]]
-&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="196" name="illusion explain" tags="" position="2047,31">If I mastered a good glamour, I would ever have to shower or moisturize again!  With my current cauldron, I knew that I would need  &lt;&lt;if $house.includes(&quot;premium cauldron&quot;)|$glamourprogress gt 0&gt;&gt;one week to learn it.
+&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="196" name="illusion explain" tags="" position="2047,31">If I mastered a good glamour, I would never have to shower or moisturize again!  With my current cauldron, I knew that I would need  &lt;&lt;if $house.includes(&quot;premium cauldron&quot;)|$glamourprogress gt 0&gt;&gt;one week to learn it.
 
 [[Time to finish it up!|create greater illusions]]
 [[Sounds like too much work.|Week 1]]&lt;&lt;else&gt;&gt;two weeks to learn it.
